@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - HostelWorld</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">HostelWorld</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search-results.html">Listings</a></li>
+                <li><a href="login-register.html">Login/Signup</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="search-results-page">
+        <aside class="filters-sidebar">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <label for="price-range">Price Range:</label>
+                <input type="range" id="price-range" name="price-range" min="0" max="200">
+                <span id="price-value">$0 - $200</span>
+            </div>
+            <div class="filter-group">
+                <label>Room Type:</label>
+                <select id="room-type">
+                    <option value="any">Any</option>
+                    <option value="dorm">Dorm</option>
+                    <option value="private">Private</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Amenities:</label>
+                <div><input type="checkbox" id="wifi" name="amenities" value="wifi"><label for="wifi">Wi-Fi</label></div>
+                <div><input type="checkbox" id="kitchen" name="amenities" value="kitchen"><label for="kitchen">Kitchen</label></div>
+                <div><input type="checkbox" id="laundry" name="amenities" value="laundry"><label for="laundry">Laundry</label></div>
+            </div>
+            <div class="filter-group">
+                <label for="rating-min">Min Rating:</label>
+                <select id="rating-min">
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <button id="apply-filters">Apply Filters</button>
+            <button id="save-search">Save Search</button>
+        </aside>
+
+        <section class="results-content">
+            <div class="results-header">
+                <h2>Results for "London"</h2>
+                <div class="view-toggle">
+                    <button id="list-view-btn" class="active">List View</button>
+                    <button id="map-view-btn">Map View</button>
+                </div>
+                <div class="sort-options">
+                    <label for="sort-by">Sort By:</label>
+                    <select id="sort-by">
+                        <option value="price-asc">Price (Low to High)</option>
+                        <option value="price-desc">Price (High to Low)</option>
+                        <option value="rating">Rating</option>
+                        <option value="distance">Distance</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="list-view" class="results-list">
+                <div class="hostel-card">
+                    <img src="images/placeholder-hostel1.jpg" alt="Hostel Name">
+                    <div class="hostel-info">
+                        <h3><a href="hostel-detail.html">Awesome City Hostel</a></h3>
+                        <p class="short-desc">A friendly hostel in the heart of the city.</p>
+                        <p class="rating">Rating: 4.5/5 (200 reviews)</p>
+                        <p class="price">From $25/night</p>
+                    </div>
+                </div>
+                <div class="hostel-card">
+                    <img src="images/placeholder-hostel2.jpg" alt="Another Hostel">
+                    <div class="hostel-info">
+                        <h3><a href="hostel-detail.html">The Backpackers Hub</a></h3>
+                        <p class="short-desc">Budget-friendly with great vibes.</p>
+                        <p class="rating">Rating: 4.2/5 (150 reviews)</p>
+                        <p class="price">From $20/night</p>
+                    </div>
+                </div>
+                </div>
+
+            <div id="map-view" style="display:none;">
+                <div id="map-placeholder" style="height: 500px; background: #e0e0e0; display:flex; align-items:center; justify-content:center; text-align:center;">
+                    Interactive Map Will Be Here<br>(Requires JavaScript library like Leaflet or Google Maps API)
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#">&laquo; Prev</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Next &raquo;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HostelWorld. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

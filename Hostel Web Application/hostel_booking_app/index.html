@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostelWorld - Find Your Adventure</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HostelWorld</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search-results.html">Listings</a></li>
+                <li><a href="login-register.html">Login/Signup</a></li>
+                <li>
+                    <select id="language-switch">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                    <select id="currency-switch">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                    </select>
+                </li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Find Your Next Adventure</h1>
+            <div class="search-bar">
+                <input type="text" id="location-search" placeholder="Enter city or area (e.g., London)">
+                <input type="date" id="checkin-date">
+                <input type="date" id="checkout-date">
+                <input type="number" id="guests-input" placeholder="Guests" min="1">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="geolocation-message" style="display:none; color: #fff; margin-top:10px;"></div>
+        </section>
+
+        <section class="featured-destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="images/placeholder-destination1.jpg" alt="Destination 1">
+                    <h3>Paris</h3>
+                </div>
+                <div class="destination-card">
+                    <img src="images/placeholder-destination2.jpg" alt="Destination 2">
+                    <h3>Rome</h3>
+                </div>
+                <div class="destination-card">
+                    <img src="images/placeholder-destination3.jpg" alt="Destination 3">
+                    <h3>Bangkok</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Travelers Say</h2>
+            <div class="testimonial-card">
+                <p>"Amazing experience, found the perfect hostel easily!" - Alex P.</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Great prices and a wide selection of hostels." - Maria S.</p>
+            </div>
+        </section>
+
+        <section class="promotional-banner">
+            <h2>Special Offer! 10% off your first booking!</h2>
+            <button>Claim Offer</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HostelWorld. All rights reserved.</p>
+        <a href="#">About Us</a> | <a href="#">Contact</a> | <a href="#">Terms</a> | <a href="#">Privacy</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

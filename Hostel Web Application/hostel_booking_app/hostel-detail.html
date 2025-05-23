@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Name - HostelWorld</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">HostelWorld</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search-results.html">Listings</a></li>
+                <li><a href="login-register.html">Login/Signup</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="hostel-detail-page">
+        <section class="hostel-main-info">
+            <h1>Awesome City Hostel</h1>
+            <div class="image-gallery">
+                <img src="images/placeholder-hostel-large.jpg" alt="Hostel main image" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="images/placeholder-hostel-thumb1.jpg" alt="Thumbnail 1">
+                    <img src="images/placeholder-hostel-thumb2.jpg" alt="Thumbnail 2">
+                    <img src="images/placeholder-hostel-thumb3.jpg" alt="Thumbnail 3">
+                </div>
+            </div>
+
+            <div class="hostel-content">
+                <div class="description-amenities">
+                    <h2>Description</h2>
+                    <p>Welcome to Awesome City Hostel! Located in the vibrant heart of the city, we offer a comfortable and social atmosphere for backpackers and budget travelers. Enjoy our clean facilities, friendly staff, and easy access to major attractions.</p>
+                    <p><em>This description would be multi-language capable in a full build.</em></p>
+
+                    <h2>Amenities</h2>
+                    <ul class="amenities-list">
+                        <li><span class="icon">📶</span> Free WiFi</li>
+                        <li><span class="icon">🍳</span> Kitchen</li>
+                        <li><span class="icon">🧺</span> Laundry</li>
+                        <li><span class="icon"> lockers</span> Secure Lockers</li>
+                        <li><span class="icon">☕</span> Common Area</li>
+                    </ul>
+                </div>
+
+                <aside class="booking-widget">
+                    <h2>Book Your Stay</h2>
+                    <div class="price-display">Starting from <span class="dynamic-price">$25</span> / night</div>
+                    <div class="form-group">
+                        <label for="checkin">Check-in:</label>
+                        <input type="date" id="checkin" name="checkin">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check-out:</label>
+                        <input type="date" id="checkout" name="checkout">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests:</label>
+                        <input type="number" id="guests" name="guests" min="1" value="1">
+                    </div>
+                    <label for="room-type-select">Room Type:</label>
+                    <select id="room-type-select">
+                        <option value="dorm_female_6bed">6 Bed Female Dorm</option>
+                        <option value="dorm_mixed_8bed">8 Bed Mixed Dorm</option>
+                        <option value="private_double">Private Double Room</option>
+                    </select>
+                    <div class="availability-calendar-placeholder">Availability Calendar Here</div>
+                    <button class="cta-book-now sticky-cta">Book Now</button>
+                    <button class="chat-host-btn">Chat with Host (Optional)</button>
+                </aside>
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <h2>Reviews (150) <span class="aggregate-rating">⭐ 4.5/5</span></h2>
+            <div class="review-form-placeholder">
+                <p>Leave a review (only for verified bookings).</p>
+                <textarea placeholder="Write your review..."></textarea>
+                <button>Submit Review</button>
+            </div>
+            <div class="review-item">
+                <h3>Sarah K. ⭐⭐⭐⭐⭐</h3>
+                <p><em>Verified Booking</em></p>
+                <p>Amazing hostel! Super clean, great location, and the staff were incredibly helpful. Met some awesome people in the common room. Highly recommend!</p>
+            </div>
+            <div class="review-item">
+                <h3>John B. ⭐⭐⭐⭐</h3>
+                <p><em>Verified Booking</em></p>
+                <p>Good value for money. A bit noisy at night, but that's expected in a city center hostel. Breakfast was decent.</p>
+            </div>
+        </section>
+
+        <section class="map-location">
+            <h2>Location</h2>
+            <div id="hostel-map-placeholder" style="height: 300px; background: #e0e0e0; display:flex; align-items:center; justify-content:center;">Hostel Map Location Here</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HostelWorld. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

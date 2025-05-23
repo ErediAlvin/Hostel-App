@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - HostelWorld</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">HostelWorld</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search-results.html">Listings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="dashboard-page">
+        <h1>Welcome, User!</h1>
+        <div class="dashboard-container">
+            <aside class="dashboard-nav">
+                <ul>
+                    <li><a href="#profile" class="dash-nav-link active" data-target="profile-overview">Profile Overview</a></li>
+                    <li><a href="#bookings" class="dash-nav-link" data-target="my-bookings">My Bookings</a></li>
+                    <li><a href="#wishlist" class="dash-nav-link" data-target="my-wishlist">Wishlist</a></li>
+                    <li><a href="#reviews" class="dash-nav-link" data-target="my-reviews">My Reviews</a></li>
+                    <li><a href="#settings" class="dash-nav-link" data-target="my-settings">Settings</a></li>
+                </ul>
+            </aside>
+            <section class="dashboard-content">
+                <div id="profile-overview" class="dashboard-tab-content active">
+                    <h2>Profile Overview</h2>
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <button>Edit Personal Info</button>
+                </div>
+                <div id="my-bookings" class="dashboard-tab-content">
+                    <h2>My Bookings</h2>
+                    <p>Your bookings will appear here.</p>
+                    <div class="booking-item">
+                        <p><strong>Hostel:</strong> Awesome City Hostel</p>
+                        <p><strong>Dates:</strong> 2025-07-15 to 2025-07-18</p>
+                        <p><strong>Status:</strong> Confirmed</p>
+                        <button>Manage Booking</button>
+                    </div>
+                </div>
+                <div id="my-wishlist" class="dashboard-tab-content">
+                    <h2>My Wishlist</h2>
+                    <p>Hostels you've saved will appear here.</p>
+                </div>
+                <div id="my-reviews" class="dashboard-tab-content">
+                    <h2>My Reviews</h2>
+                    <p>Reviews you've posted will appear here.</p>
+                </div>
+                <div id="my-settings" class="dashboard-tab-content">
+                    <h2>Settings</h2>
+                    <p>Account settings (e.g., change password, notification preferences) will be here.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HostelWorld. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
